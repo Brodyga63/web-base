@@ -90,4 +90,108 @@ body {
     .resume__header { flex-direction: column; text-align: center; }
     .skills__grid { grid-template-columns: 1fr; }
     .download-btn { display: none; }
+<<<<<<< HEAD
+=======
+}
+
+/* Стили для формы калькулятора внутри терминала */
+.calc-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.calc-form__row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.calc-form__input {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #333;
+    color: var(--accent);
+    font-family: 'Courier New', monospace;
+    font-size: 1rem;
+    padding: 5px;
+    width: 100%;
+    transition: var(--transition);
+}
+
+.calc-form__input:focus {
+    outline: none;
+    border-bottom-color: var(--accent);
+    background: rgba(187, 134, 252, 0.05);
+}
+
+.calc-form__input--select {
+    cursor: pointer;
+    background: #0a0a0a;
+}
+
+.calc-form__btn {
+    background: var(--accent);
+    color: var(--bg-color);
+    border: none;
+    padding: 12px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: var(--transition);
+    margin-top: 10px;
+}
+
+.calc-form__btn:hover {
+    box-shadow: 0 0 15px var(--accent);
+    transform: translateY(-2px);
+}
+
+.calc-form__result {
+    padding-top: 15px;
+    border-top: 1px solid #222;
+    font-family: 'Courier New', monospace;
+    min-height: 1.5em;
+}
+
+/* Переиспользуем анимацию fadeInUp для всей страницы */
+.page-calc .resume {
+    animation: fadeInUp 0.8s ease-out;
+}
+/* Блок проектов по БЭМ */
+.projects__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.projects__card {
+    background: var(--card-bg);
+    border: 1px solid #222;
+    padding: 20px;
+    border-radius: 4px;
+    transition: var(--transition);
+}
+
+.projects__card:hover {
+    border-color: var(--accent);
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(187, 134, 252, 0.1);
+}
+
+.projects__name {
+    color: var(--accent);
+    margin: 0 0 10px 0;
+    font-size: 1.1rem;
+}
+
+.projects__description {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin-bottom: 15px;
+    min-height: 3em;
+>>>>>>> 11cb1059bd46a1343ee4c7cd510b4494173a41f3
 }
