@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 return;
             }
 
+            
             let result;
             switch(op) {
                 case 'add': result = n1 + n2; break;
